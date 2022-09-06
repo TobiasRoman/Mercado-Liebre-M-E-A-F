@@ -1,0 +1,119 @@
+:root {
+    /* COLORES */
+    --color-amarillo : #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebeb;
+    --color-verde : #39b54a;
+    /* FUENTES */
+    --font-roboto : 'Roboto', sans-serif;
+    /* Tamaños de fuentes */
+     --paragraph : 12px; /*parrafo */
+    --title : 24px;
+    --prices : 18px;
+    --discounts-descriptions : 16px;
+}
+
+
+/*+++++++++++++++++++ */
+/* ESTILOS GENERALES */
+/*+++++++++++++++++ */
+
+
+ *{ /* APLICA A TODOS LOS ELEMENTOS DE NUESTROS ELEMENTOS*/
+    margin: 0; /* caja para afuera es margin*/
+    padding: 0; /* caja para dentro es paddin*/
+}
+
+a {
+    color: black;
+    text-decoration: none; /*saca el subrayado de los links*/
+}
+
+body {
+    font-family: var(--font-roboto);
+}
+li {
+    list-style: none;
+}
+
+/*+++++++++++++++++++ */
+/* FIN ESTILOS GENERALES */
+/*+++++++++++++++++ */
+/* HEADER */
+
+header {
+    background-color: var(--color-amarillo);
+    font-size: var(--paragraph);
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+header .burger-menu {
+    background-color: var(--color-celeste);
+    border-radius: 5px;
+    color: white ;
+    text-align: center; /*alinea todos los elementos tipo texto*/
+    width: 15px;
+    padding: 7px;
+    font-size: 17px;
+    margin: 10px  auto 0 auto; /*ARRIBA, LATERAL DERECHO, ABAJO, LATERAL IZQUIERDO, MODO RELOJ*/
+}
+
+
+
+header img#logo {
+width: 130px;
+margin-left: 25px;
+}
+header .busqueda {
+    margin-left: 25px;
+}
+
+header p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header nav .menu-top {
+    margin-bottom: 18px;
+}
+
+
+/*+++++++++++++++++++ */
+/* FIN HEADER */
+/*+++++++++++++++++ */
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+footer article {
+    margin-bottom: 25px;
+}
+
+footer article p {
+    font-size: var(--paragraph);
+    width: 80%;
+    margin: 0 auto; /* 1 arriba y abajo no se le aplica nada y el segundo es los dos costados*/
+}
+
+footer article h4 {
+    font-size: 14px;
+}
+footer article p i {
+    color: var(--color-celeste);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+footer p#copyright{
+    font-size: var(--paragraph);
+    color: var(--color-grisOscuro);
+    text-align: left;
+    padding-left: 10px;
+}
